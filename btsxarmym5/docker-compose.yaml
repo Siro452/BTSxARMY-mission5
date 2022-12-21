@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  # api:
+  #   build: ./api
+  #   container_name: mission5
+  #   ports:
+  #     - 4000:4000
+  #   volumes: -/app/node_modules
+  src:
+    build: .
+    container_name: myblog_c
+    ports:
+      - "30:00"
+    stdin_open: true
+    tty: true
